@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <!-- Link Favicon -->
+    <!-- Link Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Link Jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and Minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- compiled and minified Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- Link to external Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../style/about.css">
+    <title> About </title>
+</head>
+<body>
+    <!-- add a full size introduction modal here to give a little blurb about you. -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h2>Hey There!</h2>
+            <p>My name is Will Miller, I'm a full stack web developer...more content more content more content</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-light btn-flat amber darken-4">Clever button words</a>
+        </div>
+    </div>
+    <!-- End of modal -->
+    <ul id="slide-out" class="side-nav fixed">
+        <li><div class="user-view">
+            <div class="background">
+                <img src="">
+            </div>
+            <a href="#!User"><img class="circle" src="#!ProfileImage"></a>
+            <a href="#!name"><span class="grey-text name">Will Michael Miller</span></a>
+            <a href="#!email"><span class="grey-text email">wilmiller@gmail.com</span></a>
+        </div></li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect waves-light amber darken-4" href="about.html">About</a></li>
+        <br>
+        <li><a class="waves-effect waves-light amber darken-4" href="contact.html">Contact</a></li>
+        <br>
+        <li><a class="waves-effect waves-light amber darken-4" href="gallery.html">Gallery</a></li>
+        <br>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col l4">
+                    <img src="#!AboutPicture">
+                </div>
+                <div class="col l1">
+                    <img scr="#!OpenCurlyBracket">
+                </div>
+                <div class="col l7">
+                    <h2 id="header-name"> Will Michael Miller </h2>
+                    <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem mollitia sunt itaque eaque fugiat? Itaque quae neque nobis minus suscipit sed, perspiciatis laudantium accusamus quos, modi atque deleniti! Quisquam, fuga. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, minima est? Nulla inventore in voluptas est molestias provident ratione nihil commodi perspiciatis illo maxime quasi, dolorem, magnam praesentium! Distinctio, repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ea laborum veniam quisquam doloremque id minima laudantium asperiores dolor? Recusandae obcaecati ipsam quo minima accusamus est! In beatae quia quae?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l12">
+                    <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis porro iure vitae in molestias ea assumenda. Ut consectetur temporibus dolore animi alias sunt, minus illo unde cumque quae corporis eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iusto saepe quisquam, id neque voluptate quasi itaque quod rem architecto, temporibus at repellat aut? A minus corporis quasi facilis sequi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem dolores consequuntur. Quia, modi odit libero at error nulla vitae accusantium excepturi adipisci illum quisquam, voluptas dolor? Mollitia, voluptatum consequuntur!</p>
+                </div>
+            </div>
+            <br>
+            <div class="col l12">
+                <p id="col l12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illum sunt nemo. Omnis adipisci ea fugit sunt placeat quisquam nisi rem unde alias laboriosam minus sed, consectetur eaque provident laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ipsam ducimus aut sed id cupiditate. Corrupti deleniti repudiandae natus totam dolores officia fuga quia autem, dolore odit nobis. Obcaecati, sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, mollitia voluptates. Enim neque illum id? Aliquid corporis iusto consectetur cumque? Maiores in perspiciatis vero fugiat corporis perferendis distinctio unde neque!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-copyright amber darken-4">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text tamber darken-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script>
+        // Initialize collapse button
+        $(".button-collapse").sideNav();
+        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+        $('.collapsible').collapsible();
+    </script>
+</body>
+</html>
