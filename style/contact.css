@@ -1,5 +1,8 @@
 body {
     background-color: whitesmoke;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .fixed {
@@ -8,11 +11,13 @@ body {
 
 main {
     height: 100%;
+    flex: 1 0 auto;
 }
 
 main, footer {
     padding-left: 300px;
 }
+
 
 #navbarimage {
     width: 240px;
