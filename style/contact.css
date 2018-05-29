@@ -56,3 +56,40 @@ fab {
     width: 20px;
 }
 
+@media (min-width: 908px) and (max-width: 1024px) {
+    /* CSS for regular laptop screens. */
+  
+      .footer-copyright {
+          width: 100%;
+      }
+
+    
+}
+  
+@media (min-width: 481px) and (max-width: 768px) {
+    /* CSS for Tablets */
+  
+      .footer-copyright {
+          width: 105%;
+      }
+  
+      header, main, footer {
+          padding-left: 0px;
+      }
+  
+
+      
+}
+  
+@media (min-width: 320px) and (max-width: 480px) {
+    /* CSS for Smartphones */
+      
+      .footer-copyright {
+          width: 105%;
+      }
+  
+      header, main, footer {
+          padding-left: 0px;
+      }
+      
+}

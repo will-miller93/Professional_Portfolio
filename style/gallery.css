@@ -34,6 +34,7 @@ h1, h2, h3, h5, p, a {
 
 #galleryImage {
     margin-left: 40px;
+    height: 520px;
     /* border: solid;
     border-width: 2px; */
 }
@@ -43,13 +44,77 @@ h1, h2, h3, h5, p, a {
 
 }
 
-.ZigRig, .HangMan {
-    padding-bottom: 22px;
-}
 
 .icon {
     width: 115px;
     height: 115px;
     margin-left: 25px;
     margin-right: 25px;
+}
+
+@media (min-width: 908px) and (max-width: 1024px) {
+    /* CSS for regular laptop screens. */
+  
+    .footer-copyright {
+        width: 100%;
+    }
+                
+    #galleryImage {
+        height: 400px;    
+    }
+}
+  
+@media (min-width: 481px) and (max-width: 768px) {
+    /* CSS for Tablets */
+  
+    .footer-copyright {
+        width: 105%;
+    }
+  
+    header, main, footer {
+        padding-left: 0px;
+
+    }
+    /* h5, p {
+        font-size: 9px;
+
+    } */
+
+    #galleryImage {
+        height: 400px;
+        
+    }
+    
+    /* .portImg {
+        padding-bottom: 0;
+    } */
+  
+
+      
+}
+  
+@media (min-width: 320px) and (max-width: 480px) {
+    /* CSS for Smartphones */
+      
+      .footer-copyright {
+          width: 105%;
+      }
+  
+      header, main, footer {
+          padding-left: 0px;
+      }
+
+      h5, p {
+          font-size: 9px;
+      }
+
+      #galleryImage {
+          height: 225px;
+          
+      }
+      
+      .portImg {
+          padding-bottom: 0;
+      }
+      
 }

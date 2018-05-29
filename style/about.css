@@ -34,6 +34,10 @@ main {
     font-size: 20px;
 }
 
+.container {
+    width: 75%;
+}
+
 #mainPage-Image {
     height: max-content;
     width: min-content;
@@ -57,7 +61,7 @@ h2 {
 
 
   
-@media only screen and (max-width : 992px) {
+/* @media only screen and (max-width : 992px) {
     header, main, footer {
         padding-left: 0;
     }
@@ -71,5 +75,52 @@ body {
 
 main {
     flex: 1 0 auto;
+} */
+
+@media (min-width: 908px) and (max-width: 1024px) {
+  /* CSS for regular laptop screens. */
+
+    .footer-copyright {
+        width: 100%;
+    }
+
+    #p1, #p2 {
+        font-size: 16px;
+    }
+
+
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  /* CSS for Tablets */
+
+    .footer-copyright {
+        width: 105%;
+    }
+
+    header, main, footer {
+        padding-left: 0px;
+    }
+
+    #p1, #p2 {
+        font-size: 14px;
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS for Smartphones */
+    
+    .footer-copyright {
+        width: 105%;
+    }
+
+    header, main, footer {
+        padding-left: 0px;
+    }
+
+    #p1, #p2 {
+        font-size: 14px;
+    }
+    
+}
