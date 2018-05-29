@@ -1,3 +1,55 @@
+body {
+    background-color: whitesmoke;
+}
+
+.container {
+    width: 80%;
+}
+
+.fixed {
+    background-color: whitesmoke;
+}
+
 header, main, footer {
     padding-left: 300px;
+}
+
+
+#name {
+    font-size: 20px;
+}
+
+#email {
+    font-size: 20px;
+}
+
+#navbarimage {
+    width: 240px;
+    height: 190px;
+}
+
+h1, h2, h3, h5, p, a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#galleryImage {
+    margin-left: 40px;
+    /* border: solid;
+    border-width: 2px; */
+}
+
+.portImg {
+    width: 100%;
+
+}
+
+.ZigRig, .HangMan {
+    padding-bottom: 22px;
+}
+
+.icon {
+    width: 115px;
+    height: 115px;
+    margin-left: 25px;
+    margin-right: 25px;
 }

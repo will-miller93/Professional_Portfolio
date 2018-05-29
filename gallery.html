@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Link Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
     <!-- Link Favicon -->
     <!-- Link Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,131 +18,224 @@
     <!-- compiled and minified Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <!-- Link to external Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="../style/gallery.css">
+    <link rel="stylesheet" type="text/css" href="style/gallery.css">
     <title> Gallery </title>
 </head>
+
 <body>
-    <ul id="slide-out" class="side-nav fixed">
-        <li><div class="user-view">
-        <div class="background">
-            <img src="">
-        </div>
-        <a href="#!User"><img class="circle" src="#!ProfileImage"></a>
-        <a href="#!name"><span class="grey-text name">Will Michael Miller</span></a>
-        <a href="#!email"><span class="grey-text email">wilmiller@gmail.com</span></a>
-        </div></li>
-        <li><div class="divider"></div></li>
-        <li><a class="waves-effect waves-light amber darken-4" href="index.html">About</a></li>
+    <ul id="slide-out" class="side-nav fixed z-depth-5">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/woodGrainImage.jpg">
+                </div>
+                <a href="#!User">
+                    <img class="circle z-depth-5" id="navbarimage" src="images/resizedProfileImage.png">
+                </a>
+                <a href="#!name">
+                    <span class="black-text name" id="name">Will Michael Miller</span>
+                </a>
+                <a href="#!email">
+                    <span class="black-text email" id="email">wilmiller@gmail.com</span>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a class="waves-effect waves-light amber lighten-1 z-depth-3" href="index.html">About</a>
+        </li>
         <br>
-        <li><a class="waves-effect waves-light amber darken-4" href="contact.html">Contact</a></li>
+        <li>
+            <a class="waves-effect waves-light amber lighten-1 z-depth-3" href="contact.html">Contact</a>
+        </li>
         <br>
-        <li><a class="waves-effect waves-light amber darken-4" href="gallery.html">Gallery</a></li>
+        <li>
+            <a class="waves-effect waves-light amber lighten-1 z-depth-3" href="gallery.html">Gallery</a>
+        </li>
         <br>
     </ul>
-    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-        
+    <a href="#" data-activates="slide-out" class="button-collapse">
+        <i class="material-icons">menu</i>
+    </a>
+
     <main>
         <!-- Use scrollspy here to let the gallery container be smaller than needed and the user to scroll through projects. -->
         <div class="container">
             <div class="row">
-                <div class="col l12">
-                    <h1 id="galleryHeader"> Gallery </h1>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col l6">
-                    <!-- this is where the first of the project linked images go. -->
-                </div>
-                <div class="col l6">
-                    <!-- this is where the second of the project linked images go. -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col l6">
-                    <!-- this is where the third of the project linked images goes.-->
-                </div>
-                <div class="col l6">
-                    <!-- this is where the fourth of the project linked images goes. -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col l6">
-                    <!-- this is where the fifth of the project linked images goes. -->
-                </div>
-                <div class="col l6">
-                    <!-- this is where the sixth of the project linked images goes. -->
-                </div>
-            </div>
-        </div>
-        <!-- Technologies with skill in. -->
-        <!-- Use ScrollFire here to let each category and the icons animate. (fade in) -->
-        <div class="container">
-            <div class="row">
-                <h3>HTML</h3>
-                <hr>
-                <div class="col l12 imgs">
-                    <!-- fill these with logo icons of technologies used in the category -->
-                    <a><img class="responsive-img" src="./images/html5.png">HTML5</a>
-                    <a><img class="responsive-img" src="./images/jsxlogo.png">JSX</a>
-                </div>
-            </div>
-            <div class="row">
-                <h3>CSS</h3>
-                <hr>
-                <div class="col l12 imgs">
-                    <!-- fill these with logo icons of technologies used in the category -->
-                    <a><img class="responsive-img" src="./images/css3_logo.png">CSS3</a>
-                    <a><img class="responsive-img" src="./images/bootstrap.jpg">Bootstrap</a>
-                    <a><img class="responsive-img" src="./images/materialize.png">Materialize</a>
-                </div>
-            </div>
-            <div class="row">
-                <h3>JavaScript</h3>
-                <hr>
-                <div class="col l12 imgs">
-                    <!-- fill these with logo icons of technologies used in the category -->
-                    <a><img class="responsive-img" src="./images/javascript.png">JavaScript</a>
-                    <a><img class="responsive-img" src="./images/jquery.png">jQuery</a>
-                    <a><img class="responsive-img" src="./images/reactjs.png">React.js</a>
-                    <a><img class="responsive-img" src="./images/nodejs.png">Node.js</a>
-                </div>
-            </div>
-            <div class="row">
-                <h3>Backend</h3>
-                <hr>
-                <div class="col l12 imgs">
-                    <!-- fill these with logo icons of technologies used in the category -->
-                    <a><img class="responsive-img" src="./images/MySql.png">My Sql</a>
-                    <a><img class="responsive-img" src="./images/mongodb.png">Mongo DB</a>
-                    <a><img class="responsive-img" src="./images/npmlogo.png">NPM</a>
-                    <a><img class="responsive-img" src="./images/expresslogo.png">Express</a>
-                    <a><img class="responsive-img" src="./images/sequelize.png">Sequelize</a>
-                </div>
-            </div>
-            <div class="row">
-                <h3>Tools</h3>
-                <hr>
-                <div class="col l12 imgs">
-                    <a><img class="responsive-img" src="./images/vscode.png">VSCode</a>
-                    <a><img class="responsive-img" src="./images/sqlpro.png">Sql Pro</a>
-                    <a><img class="responsive-img" src="./images/robo3t.png">Robo 3T</a>
-                    <a><img class="responsive-img" src="./images/herokulogo.png">Heroku</a>
-                    <a><img class="responsive-img" src="./images/githublogo.png">GitHub</a>
-                </div>
-            </div>
-        </div>
+                <div class="card z-depth-5">
+                    <div class="card-content">
+                        <div class="col l12">
+                            <h1 class="center-align" id="galleryHeader"> Gallery </h1>
+                        </div>
 
+                        <hr>
+                        <div class="row">
+                            <div class="col l5 z-depth-4" id="galleryImage">
+                                <!-- this is where the first of the project linked images go. -->
+                                <a href="https://pickled-malamute-15436.herokuapp.com/"><img src="images/ZigRigResized.png" class="responsive-img portImg ZigRig"></a>
+                                <h5 class="center-align">Zig Rig</h5>
+                                <p class="center-align">Power distribution planning app to help with balancing load for generators</p>
+                            </div>
+                            <div class="col l5 z-depth-4" id="galleryImage">
+                                <!-- this is where the second of the project linked images go. -->
+                                <a href="https://will-miller93.github.io/Clicky-Game-React/"><img src="images/zeldaClickyGameResized.png" class="responsive-img portImg zelda"></a>
+                                <h5 class="center-align">Zelda Clicky React Game</h5>
+                                <p class="center-align">An image clicking game made entirely in React.js based on the video game series "The Legend of Zelda"</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col l5 z-depth-4" id="galleryImage">
+                                <!-- this is where the third of the project linked images goes.-->
+                                <a href="https://dry-citadel-82866.herokuapp.com/"><img src="images/fullStackResized.png" class="responsive-img portImg fullstack"></a>
+                                <h5 class="center-align">Full Stack React App</h5>
+                                <p class="center-align"> Full stack Reac.js reading list app </p>
+                            </div>
+                            <div class="col l5 z-depth-4" id="galleryImage">
+                                <!-- this is where the fourth of the project linked images goes. -->
+                                <a href="https://stark-bayou-83094.herokuapp.com/"><img src="images/friendFinderResized.png" class="responsive-img portImg friendfinder"></a>
+                                <h5 class="center-align">Friend Finder App</h5>
+                                <p class="center-align"> Simple friend matching app </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col l5 z-depth-4" id="galleryImage">
+                                <!-- this is where the fifth of the project linked images goes. -->
+                                <a href="https://will-miller93.github.io/Manchester_Orchestra_Hangman_game/"><img src="images/manchesterHangManResized.png" class="responsive-img portImg HangMan"></a>
+                                <h5 class="center-align">Hangman</h5>
+                                <p class="center-align"> Javascript hangman game themed after the band Manchester Orchestra </p>
+                            </div>
+                            <div class="col l5 z-depth-4" id="galleryImage">
+                                <!-- this is where the sixth of the project linked images goes. -->
+                                <a href="https://justincrywolf.github.io/moodShotV2/"><img  src="images/moodShotLogoResized.png" class="responsive-img portImg moodShot"></a>
+                                <h5 class="center-align">Mood Shot</h5>
+                                <p class="center-align">Simple app utilizing facial recognition api and a recipe api to find the perfect cocktail for the mood you're in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Technologies with skill in. -->
+            <!-- Use ScrollFire here to let each category and the icons animate. (fade in) -->
+        <div class="container">
+            <div class="card z-depth-5">
+                <div class="card-content">
+                    <div class="row">
+                        <h2 class="center-align">Technologies</h2>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <br>
+                        <h3>HTML</h3>
+                        <hr>
+                        <div class="col l12 imgs">
+                            <!-- fill these with logo icons of technologies used in the category -->
+                            <a>
+                                <img class="responsive-img icon" src="./images/html5.png">
+                            </a>
+                            <a>
+                                <img class="responsive-img icon" src="./images/jsxlogo.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <br>
+                        <h3>CSS</h3>
+                        <hr>
+                        <div class="col l12 imgs">
+                            <!-- fill these with logo icons of technologies used in the category -->
+                            <a>
+                                <img class="responsive-img icon" src="./images/css3_logo.png">
+                            </a>
+                            <a>
+                                <img class="responsive-img icon" src="./images/bootstrap.jpg">
+                            </a>
+                            <a>
+                                <img class="responsive-img icon" src="./images/materialize.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <br>
+                        <h3>JavaScript</h3>
+                        <hr>
+                        <div class="col l12 imgs">
+                            <!-- fill these with logo icons of technologies used in the category -->
+                            <a>
+                                <img class="responsive-img icon" src="./images/javascript.png">
+                            </a>
+                            <a>
+                                <img class="responsive-img icon" src="./images/jquery.png">
+                            </a>
+                            <a>
+                                <img class="responsive-img icon" src="./images/reactjs.png">
+                            </a>
+                            <a>
+                                <img class="responsive-img icon" src="./images/nodejs.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <br>
+                        <h3>Backend</h3>
+                        <hr>
+                        <div class="col l12 imgs">
+                            <!-- fill these with logo icons of technologies used in the category -->
+                            <a>
+                                <img class="responsive-img icon" src="./images/MySql.png">
+                            </a>
+                            <a>
+                                <img class="responsive-img icon" src="./images/mongodb.png">
+                            </a>
+                            <a>
+                                <img class="responsive-img icon" src="./images/npmlogo.png">
+                            </a>
+                            <a>
+                                <img class="responsive-img icon" src="./images/expresslogo.png">
+                            </a>
+                            <a>
+                                <img class="responsive-img icon" src="./images/sequelize.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <br>
+                        <h3>Tools</h3>
+                        <hr>
+                        <div class="col l12 imgs">
+                            <a>
+                                <img class="responsive-img icon" src="./images/vscode.png">
+                            </a>
+                            <a>
+                                <img class="responsive-img icon" src="./images/sqlpro.png">
+                            </a>
+                            <a>
+                                <img class="responsive-img icon" src="./images/robo3t.png">
+                            </a>
+                            <a>
+                                <img class="responsive-img icon" src="./images/herokulogo.png">
+                            </a>
+                            <a>
+                                <img class="responsive-img icon" src="./images/githublogo.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <div class="footer-copyright amber darken-4">
+        <div class="footer-copyright amber lighten-1">
             <div class="container">
                 © 2014 Copyright Text
                 <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
-        </div>     
+        </div>
     </footer>
 
 </body>
+
 </html>

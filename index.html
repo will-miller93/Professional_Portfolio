@@ -16,36 +16,27 @@
     <!-- compiled and minified Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <!-- Link to external Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="../style/about.css">
+    <link rel="stylesheet" type="text/css" href="style/about.css">
     <title> About </title>
 </head>
 <body>
-    <!-- add a full size introduction modal here to give a little blurb about you. -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <h2>Hey There!</h2>
-            <p>My name is Will Miller, I'm a full stack web developer...more content more content more content</p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-light btn-flat amber darken-4">Clever button words</a>
-        </div>
-    </div>
+
     <!-- End of modal -->
-    <ul id="slide-out" class="side-nav fixed">
+    <ul id="slide-out" class="side-nav fixed z-depth-5">
         <li><div class="user-view">
             <div class="background">
-                <img src="">
+                <img src="images/woodGrainImage.jpg">
             </div>
-            <a href="#!User"><img class="circle" src="#!ProfileImage"></a>
-            <a href="#!name"><span class="grey-text name">Will Michael Miller</span></a>
-            <a href="#!email"><span class="grey-text email">wilmiller@gmail.com</span></a>
+            <a href="#!User"><img class="circle z-depth-5" id="navbarimage" src="images/resizedProfileImage.png"></a>
+            <a href="#!name"><span class="black-text name" id="name">Will Michael Miller</span></a>
+            <a href="#!email"><span class="black-text email" id="email">wilmiller@gmail.com</span></a>
         </div></li>
         <li><div class="divider"></div></li>
-        <li><a class="waves-effect waves-light amber darken-4" href="index.html">About</a></li>
+        <li><a class="waves-effect waves-light amber lighten-1 z-depth-3" href="index.html">About</a></li>
         <br>
-        <li><a class="waves-effect waves-light amber darken-4" href="contact.html">Contact</a></li>
+        <li><a class="waves-effect waves-light amber lighten-1 z-depth-3" href="contact.html">Contact</a></li>
         <br>
-        <li><a class="waves-effect waves-light amber darken-4" href="gallery.html">Gallery</a></li>
+        <li><a class="waves-effect waves-light amber lighten-1 z-depth-3" href="gallery.html">Gallery</a></li>
         <br>
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -53,34 +44,27 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col l4">
-                    <img src="#!AboutPicture">
+                <div>
+                    <img class="col l4" id="mainPage-Image" src="images/aboutImage.png">
                 </div>
-                <div class="col l1">
-                    <img scr="#!OpenCurlyBracket">
-                </div>
-                <div class="col l7">
-                    <h2 id="header-name"> Will Michael Miller </h2>
-                    <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem mollitia sunt itaque eaque fugiat? Itaque quae neque nobis minus suscipit sed, perspiciatis laudantium accusamus quos, modi atque deleniti! Quisquam, fuga. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, minima est? Nulla inventore in voluptas est molestias provident ratione nihil commodi perspiciatis illo maxime quasi, dolorem, magnam praesentium! Distinctio, repellendus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ea laborum veniam quisquam doloremque id minima laudantium asperiores dolor? Recusandae obcaecati ipsam quo minima accusamus est! In beatae quia quae?</p>
+                <div class="col l6">
+                    <h2 id="header-name"> Hello!! </h2>
+                    <p id="p1">My name is Will Miller, I am a full-stack web-developer focused on clean, content focused design and functionality. I love the simple things in life like a artfully brewed up of coffee, disc golf with friends,  a sunny day to attend an Atlanta Braves game and the way good clean code looks on my computer screen. Web Development is more than just a career for me but a passion, it’s something that fuels my desire to solve problems and continuously learn new things.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col l12">
-                    <p id="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis porro iure vitae in molestias ea assumenda. Ut consectetur temporibus dolore animi alias sunt, minus illo unde cumque quae corporis eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iusto saepe quisquam, id neque voluptate quasi itaque quod rem architecto, temporibus at repellat aut? A minus corporis quasi facilis sequi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolorem dolores consequuntur. Quia, modi odit libero at error nulla vitae accusantium excepturi adipisci illum quisquam, voluptas dolor? Mollitia, voluptatum consequuntur!</p>
+                    <p id="p2">I graduated from the Campbell School of Business at Berry College with a bachelors degree in Marketing in 2015. During the years following my graduation I was able to pursue my dream of working in the Specialty Coffee Industry in multiple amazing local coffee shops all over Georgia. My work in the Specialty Coffee industry has given me an incredible attention to detail and a love for things that are artfully and precisely crafted. At the beginning of 2018 I left the Specialty Coffee Industry and entered into the Full-Stack Flex Web Development program at The Georgia Institute of Technology. It was during this course that I found a love for programming and building incredible applications and websites. </p>
                 </div>
-            </div>
-            <br>
-            <div class="col l12">
-                <p id="col l12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illum sunt nemo. Omnis adipisci ea fugit sunt placeat quisquam nisi rem unde alias laboriosam minus sed, consectetur eaque provident laborum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ipsam ducimus aut sed id cupiditate. Corrupti deleniti repudiandae natus totam dolores officia fuga quia autem, dolore odit nobis. Obcaecati, sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, mollitia voluptates. Enim neque illum id? Aliquid corporis iusto consectetur cumque? Maiores in perspiciatis vero fugiat corporis perferendis distinctio unde neque!</p>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="footer-copyright amber darken-4">
+        <div class="footer-copyright amber lighten-1 z-depth-5 white-text">
             <div class="container">
                 © 2014 Copyright Text
-                <a class="grey-text tamber darken-4 right" href="#!">More Links</a>
+                <a class="white-text amber lighten-1 right" href="#!">More Links</a>
             </div>
         </div>
 

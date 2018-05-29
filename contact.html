@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,8 @@
     <!-- Link Google Fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- link font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
     <!-- Link Jquery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Compiled and Minified CSS-->
@@ -16,92 +18,134 @@
     <!-- compiled and minified Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <!-- Link to external Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="../style/contact.css">
+    <link rel="stylesheet" type="text/css" href="style/contact.css">
+
     <title> Contact </title>
 </head>
+
 <body>
-    <ul id="slide-out" class="side-nav fixed">
-        <li><div class="user-view">
-            <div class="background">
-                <img src="">
+
+    <ul id="slide-out" class="side-nav fixed z-depth-5">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/woodGrainImage.jpg">
+                </div>
+                <a href="#!User">
+                    <img class="circle z-depth-5" id="navbarimage" src="images/resizedProfileImage.png">
+                </a>
+                <a href="#!name">
+                    <span class="black-text name" id="name">Will Michael Miller</span>
+                </a>
+                <a href="#!email">
+                    <span class="black-text email" id="email">wilmiller@gmail.com</span>
+                </a>
             </div>
-            <a href="#!User"><img class="circle" src="#!ProfileImage"></a>
-            <a href="#!name"><span class="white-text name">Will Michael Miller</span></a>
-            <a href="#!email"><span class="white-text email">wilmiller@gmail.com</span></a>
-        </div></li>
-        <li><div class="divider"></div></li>
-        <li><a class="waves-effect waves-light amber darken-4" href="index.html">About</a></li>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a class="waves-effect waves-light amber lighten-1 z-depth-3" href="index.html">About</a>
+        </li>
         <br>
-        <li><a class="waves-effect waves-light amber darken-4" href="contact.html">Contact</a></li>
+        <li>
+            <a class="waves-effect waves-light amber lighten-1 z-depth-3" href="contact.html">Contact</a>
+        </li>
         <br>
-        <li><a class="waves-effect waves-light amber darken-4" href="gallery.html">Gallery</a></li>
+        <li>
+            <a class="waves-effect waves-light amber lighten-1 z-depth-3" href="gallery.html">Gallery</a>
+        </li>
         <br>
     </ul>
-    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-        
+    <a href="#" data-activates="slide-out" class="button-collapse">
+        <i class="material-icons">menu</i>
+    </a>
+
     <main>
+        <header>
+            <h2 id="contactHeader">I would love to hear from you!</h2>
+            <p id="contactp">If you have any questions about my work, want to work together or have any other questions I would love to hear
+                from you! Make sure to fill every area below and kindly allow me a couple of days to respond.</p>
+        </header>
+        <hr>
+        <br>
         <div class="container">
-            <div class="row amber darken-4">
-                <form class="col l12">
-                    <!--this is where all of the html for the request form goes.-->
-                    <div class="row">
-                        <!--put in your first name.-->
-                        <div class="input-field col s12">
-                            <input id="first_name" type="text" class="validate">
-                            <label for="first_name" class="white-text">First Name</label>
-                        </div>
+            <div class="row">
+                <div class="card z-depth-5">
+                    <div class="card-content">
+                        <form action="mailto:wilmiller@gmail.com" method="POST" enctype="text/plain">
+                            <!--this is where all of the html for the request form goes.-->
+                            <div class="row">
+                                <!--put in your first name.-->
+                                <div class="input-field col s12">
+                                    <input id="first_name" type="text" class="validate">
+                                    <label for="first_name" class="black-text">First Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!--put in your last name.-->
+                                <div class="input-field col s12">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name" class="black-text">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!--put in your email address -->
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email" class="black-text">Email Address</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!--type your message here.-->
+                                <div class="input-field col s12">
+                                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                    <label for="textarea1" class="black-text">Textarea</label>
+                                </div>
+                            </div>
+                            <button class="btn waves-effect waves-light amber lighten-1" type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </form>
                     </div>
-                    <div class="row">
-                        <!--put in your last name.-->
-                        <div class="input-field col s6">
-                            <input id="last_name" type="text" class="validate">
-                            <label for="last_name" class="white-text">Last Name</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!--put in your email address -->
-                        <div class="input-field col s12">
-                            <input id="email" type="email" class="validate">
-                            <label for="email" class="white-text">Email Address</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!--type your message here.-->
-                        <div class="input-field col s12">
-                            <textarea id="textarea1" class="materialize-textarea"></textarea>
-                            <label for="textarea1" class="white-text">Textarea</label>
-                        </div>
-                    </div>
-                </form>
+                </div>
             </div>
             <br>
             <br>
             <div class="row">
                 <div class="col m6 l12">
-                    <div class="card amber darken-4">
-                        <div class="card-content white-text">
-                            <span class="card-title"> Contact Me </span>
+                    <div class="card z-depth-5">
+                        <div class="card-content black-text center-align">
+                            <span class="card-title"> You can also find me here! </span>
                         </div>
-                        <div class="card-action">
-                            <a href="https://github.com/will-miller93"><i class="fas fa-github-square material-icons">GitHub</i></a>
-                            <a href="https://www.linkedin.com/in/will-miller-658761a2/"><i class="fas fa-linkedin material-icons">LinkedIn</i></a>
-                            <a href="https://twitter.com/Will_mMiller?lang=en"><i class="fas fa-twitter-square material-icons">Twitter</i></a>
+                        <div class="card-action center-align">
+                            <a href="https://github.com/will-miller93" style="color:black">
+                                <i class="fab fa-github-square fa-6x"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/will-miller-658761a2/" style="color:black">
+                                <i class="fab fa-linkedin fa-6x"></i>
+                            </a>
+                            <a href="https://twitter.com/Will_mMiller?lang=en" style="color:black">
+                                <i class="fab fa-twitter-square fa-6x"></i>
+                            </a>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </main>
 
     <footer>
 
-        <div class="footer-copyright amber darken-4">
+        <div class="footer-copyright amber lighten-1 z-depth-5">
             <div class="container">
-                © 2014 Copyright Text
+                © Will Michael Miller
                 <a class="white-text text-lighten-4 right" href="#!">More Links</a>
             </div>
         </div>
-                
+
     </footer>
 </body>
+
 </html>

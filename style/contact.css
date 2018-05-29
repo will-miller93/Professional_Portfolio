@@ -1,8 +1,51 @@
-header, main, footer {
+body {
+    background-color: whitesmoke;
+}
+
+.fixed {
+    background-color: whitesmoke;
+}
+
+main {
+    height: 100%;
+}
+
+main, footer {
     padding-left: 300px;
 }
 
-.fa {
-    display: inherit !important
+#navbarimage {
+    width: 240px;
+    height: 190px;
+}
+
+#name {
+    font-size: 20px;
+}
+
+#email {
+    font-size: 20px;
+}
+
+.container {
+    padding-left: 30px;
+}
+
+h2, p, .input-field, a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#contactHeader {
+    align-content: center;
+    text-align: center;
+}
+
+#contactp {
+    text-align: center;
+}
+
+fab {
+    height: 20px;
+    width: 20px;
 }
 

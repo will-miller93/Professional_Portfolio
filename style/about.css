@@ -1,6 +1,54 @@
+body {
+    background-color: whitesmoke;
+}
+
+.fixed {
+    background-color: whitesmoke;
+}
+
 header, main, footer {
     padding-left: 300px;
 }
+
+#navbarimage {
+    width: 240px;
+    height: 190px;
+}
+
+#name {
+    font-size: 20px;
+}
+
+#email {
+    font-size: 20px;
+}
+
+#title {
+    font-size: 20px;
+}
+
+#mainPage-Image {
+    height: max-content;
+    width: min-content;
+    margin-top: 35px;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+
+#p1, #p2, a {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+#p2 {
+    margin-top: 0px;
+}
+
+
   
 @media only screen and (max-width : 992px) {
     header, main, footer {
